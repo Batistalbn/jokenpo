@@ -1,0 +1,121 @@
+* {
+  font-family: Helvetica Neue, Helvetica, Arial;
+  font-weight: 400;
+  cursor: default;
+}
+
+#jokenpo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #2ecc71;
+  height: 100vh;
+  /* padding: 30px; */
+}
+
+#title {
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+}
+
+#scoreboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#player,
+#computer {
+  position: relative;
+  flex-grow: 1;
+  border-radius: 5px;
+  color: #fff;
+  padding: 20px;
+  max-width: 100%;
+}
+
+#player {
+  background-color: #ff7675;
+}
+
+#player-name,
+#computer-name {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+}
+#computer-name {
+  text-align: right;
+}
+
+#player-points,
+#computer-points {
+  font-size: 52px;
+  position: absolute;
+  top: 8px;
+}
+#player-points {
+  right: 20px;
+}
+
+#player-choice,
+#computer-choice {
+  list-style: none;
+  text-align: center;
+  margin: 30px 0 0;
+  padding: 0;
+}
+#player-choice li,
+#computer-choice li {
+  display: inline;
+  padding: 0 15px;
+}
+#player-choice a,
+#computer-choice a {
+  opacity: 0.2;
+}
+#player-choice a:hover,
+#player-choice a.selected,
+#computer-choice a.selected {
+  opacity: 1;
+}
+#player-choice img,
+#computer-choice img {
+  max-width: 50px;
+}
+
+#versus {
+  font-size: 80px;
+  padding: 0 40px;
+}
+
+#computer {
+  background-color: #3498db;
+}
+
+#message {
+  background-color: #636e72;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+@media screen and (min-width: 800px) {
+  #jokenpo {
+    padding: 30px;
+  }
+
+  #scoreboard {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #message {
+    font-size: 24px;
+  }
+}

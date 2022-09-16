@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Jokenpô</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body id="jokenpo">
+    <header id="principal">
+      <h1 id="title">Pedra, Papel e Tesoura.</h1>
+    </header>
+    <main>
+      <div id="scoreboard">
+        <div id="player">
+          <h2 id="player-name">Nome</h2>
+          <span id="player-points">0</span>
+          <ul id="player-choice">
+            <li>
+              <a id="player-choice-1">
+                <img src="./assets/img/pedra.png" alt="pedra" />
+              </a>
+            </li>
+            <li>
+              <a id="player-choice-2">
+                <img src="./assets/img/papel.png" alt="pedra" />
+              </a>
+            </li>
+            <li>
+              <a id="player-choice-3">
+                <img src="./assets/img/tesoura.png" alt="pedra" />
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div id="versus">vs</div>
+
+        <div id="computer">
+          <h2 id="computer-name">Computador</h2>
+          <span id="computer-points">0</span>
+          <ul id="computer-choice">
+            <li>
+              <a id="computer-choice-1">
+                <img src="./assets/img/pedra.png" alt="pedra" />
+              </a>
+            </li>
+            <li>
+              <a id="computer-choice-2">
+                <img src="./assets/img/papel.png" alt="pedra" />
+              </a>
+            </li>
+            <li>
+              <a id="computer-choice-3">
+                <img src="./assets/img/tesoura.png" alt="pedra" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="message"></div>
+    </main>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
